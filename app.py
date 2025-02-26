@@ -74,7 +74,7 @@ def app2():
      </h1>
     """
 
-@app.route("/productos")
+@app.route("/movimientos")
 def movimientos():
     if not con.is_connected():
         con.reconnect()
@@ -103,7 +103,7 @@ def movimientos():
         registro["Hora"]       = fecha_hora.strftime("%H:%M:%S")
     """
 
-    return render_template("productos.html", movimientos=registros)
+    return render_template("movimientos.html", movimientos=registros)
 
 @app.route("/productos/buscar", methods=["GET"])
 def buscarProductos():
