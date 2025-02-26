@@ -52,12 +52,11 @@ def productos():
 
     cursor = con.cursor(dictionary=True)
     sql    = """
-    SELECT Id_Producto,
-           Nombre_Producto,
-           Precio,
-           Existencias
+    SELECT idMovimiento,
+           monto,
+           fechaHora
 
-    FROM productos
+    FROM movimientos
 
     LIMIT 10 OFFSET 0
     """
