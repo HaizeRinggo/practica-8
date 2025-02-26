@@ -2,18 +2,16 @@
     <thead class="table-active">
         <tr>
             <th>Id</th>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Existencias</th>
+            <th>Monto</th>
+            <th>Fecha</th>
         </tr>
     </thead>
     <tbody>
-        {% for producto in productos %}
+        {% for movimiento in movimientos %}
         <tr>
-            <td>{{ producto.Id_Producto }}</td>
-            <td>{{ producto.Nombre_Producto }}</td>
-            <td>{{ producto.Precio }}</td>
-            <td>{{ producto.Existencias }}</td>
+            <td>{{ movimiento.idMoovimiento }}</td>
+            <td>{{ movimiento.monto }}</td>
+            <td>{{ movimiento.fechaHora }}</td>
         </tr>
         {% endfor %}
     </tbody>
