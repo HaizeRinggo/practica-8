@@ -43,7 +43,36 @@ def app2():
 
     con.close()
 
-    return "<h5>Hola, soy la view app</h5>";
+    return "<h1>
+    <pre>
+        ,--./,-.       
+       / #      \
+      |          |
+       \        /    
+        `._,._,'
+    </pre>
+    </h1>
+    
+    <h1>
+        <pre>
+            ,--./,-.
+           / #      \
+          |          |
+           \        /    
+            `._,._,'
+        </pre>
+     </h1>
+    
+     <h1>
+        <pre>
+             ,--./,-.
+            / #      \
+           |          |
+            \        /    
+             `._,._,'
+        </pre>
+     </h1>
+    ";
 
 @app.route("/productos")
 def productos():
