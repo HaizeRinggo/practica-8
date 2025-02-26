@@ -43,7 +43,7 @@ def app2():
 
     con.close()
 
-    return "<h1>
+    return """<h1>
     <pre>
         ,--./,-.       
        / #      \
@@ -72,7 +72,7 @@ def app2():
              `._,._,'
         </pre>
      </h1>
-    ";
+    """
 
 @app.route("/productos")
 def productos():
